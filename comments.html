@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ <title> COMMENTS </title> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style media="screen">
+*{
+margin: 0; padding: 0;
+box-sizing: border-box;
+text-transform: capitalize;
+font-family: verdana;
+border: none;
+outline: none;
+letter-spacing: 2px;
+}
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: #222;
+}
+
+.container{
+width: 500px;
+text-align: right;
+}
+
+.box-container{
+height: 200px;
+width: 100%;
+background: #444;
+box-shadow: 0 7px 17px #111;
+border-radius: 7px;
+padding: 17px;
+display: none;
+}
+
+.box-container .box{
+height: 80%;
+width: 100%;
+border-radius: 7px;
+padding: 10px;
+background: #f8f8f8;
+overflow-y: auto;
+text-align: left;
+}
+
+#input{
+width: 100%;
+height: 40px;
+background: none;
+font-size: 17px;
+color: #fff;
+border-bottom: 1px solid #fff;
+}
+
+#input:focus{
+border-bottom: 2px solid #fff;
+}
+
+button{
+height: 30px;
+width: 160px;
+background: #00ff00;
+color: #fff;
+cursor: pointer;
+margin: 10px 0;
+font-size: 17px;
+box-shadow: 0 3px 10px #111;
+border-radius: 7px;
+}
+
+button: hover{
+opacity: .8;
+}
+
+</style>
+
+<script src="../jQuery/jquery-3.6.0.js" charset="utf-8">
+</script>
+</head>
+<body>
+
+<form action=" " method="POST">
+
+<div class="container">
+<input type="text" id="input" placeholder="Write your text here...">
+<button type="button" name="button" id="cancel">cancel</button>
+<button type="button" name="button" id="comment">comment</button>
+
+<div class="box-container">
+<div class="box"></div>
+<button type="button" name="button" id="delete">delete</button>
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$('#comment').click(function(){
+  var input = $('#input').val();
+  $('.box').append(input + '<br>');
+  $('#input').val(' ');
+  $('.box-container').slideDown();
+});
+
+$('#cancel').click(function(){
+  $('#input').val(' ');
+});
+
+$('#delete').click(function(){
+  $('.box').text(' ');
+  $('.box-container').slideUp();
+});
+
+});
+
+</script>
+
+</form>
+
+</body>
+</html>
+

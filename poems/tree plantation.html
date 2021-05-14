@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head> <title> Tree Plantation </title> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style media="screen">
+
+.container {
+background: linear-gradient(to left, #ff0000 0%, #9933ff 100%);
+}
+
+::-webkit-scrollbar
+{
+width 0;
+}
+
+#scrollPath
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+height: 100%;
+background: rgba(255,255,255,0.05);
+}
+
+#progressbar
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+background: linear-gradient(to top, #008aff, #00ffe7);
+animation: animate 7s linear infinite;
+}
+
+@keyframes animate
+{
+0%, 100%
+{
+filter: hue-rotate(0deg);
+}
+50%
+{
+filter: hue-rotate(360deg);
+}
+}
+
+#progressbar: before
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(10px);
+}
+
+#progressbar: after
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(30px);
+}
+
+button{
+height: 30px;
+background: linear-gradient(to left, #ff0000 0%, #9933ff 100%);
+color:  #F8F8F8;
+cursor: pointer;
+margin: 10px 0;
+font-size: 17px;
+box-shadow: 0 2px 17px #111;
+border-radius: 7px;
+}
+
+button:hover{
+opacity: .7;
+}
+
+</style>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../AAS STUDIOS.png" alt="AAS Studios" width="100%" height"100%"  title="AAS Studios - Creations">
+</a>
+</header>
+<div class ="container">
+<hr>
+<nav>
+<table cellspacing="7" cellpadding="7">
+<tr>
+<td><a href="../index.html"><button> HOME </button></td>
+<td><a href="../POEM.html"><button> POEMS </button></td>
+<td><a href="../SONGS.html"><button> SONGS</button></td>
+<td><a href="../STORIES.html"> <button>STORIES </button></td>
+<td><a href="../DOCUMENTARY.html"><button> DOCUMENTARY </button></td>
+</tr>
+</table>
+</nav>
+<hr>
+</div>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+
+<poem>
+
+<header><h2><center> TREE PLANTATION </center></h2></header>
+
+<img src="../img/1349289.jpg" width="100%" height="100%" title="We are because of trees">
+
+<p style="font-size:75px">
+<pre style="font-size:17px">
+The trees existed from much long ago,
+Where we had no idea how did they grow,
+When there was no one for the seeds to sow,
+How did these trees actually grow.
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+Researching for a long time we found,
+These trees grow from the ground,
+And they can be so old around,
+100 years but still in sound.
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+When we found out they can be so useful,
+The part which I fear,
+And cut them down for our good,
+And reducing their life year(s).
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+This slowly lead to deforestation,
+Causing the area to get barren land,
+There were many voices of hesitation,
+Thinking of not making earth covered by sand. 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+Great nature lovers made many attempts,
+To stop this wrong deed,
+Of cutting down trees,
+Because they were what we need.
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+Then time passed,
+Many projects were taken up for planting trees,
+People got aware about trees importance,
+Making it for nature lovers a ease.
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+So we still have to take an effort to plant trees,
+Who knows a time may come,
+When there is shortage,
+Better have precaution we overcome. 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+How important are these to us,
+They manage whole planet,
+But we have a point in plus,
+Making it easier to save our mother earth.
+</pre>
+</p>
+
+<h4 align="right"> ~ by Arav Shrivastava </h4>
+
+</poem>
+
+Comment: <br>
+<textarea name=" " id=" " cols="50" rows="10" placeholder="Please enter your comment here.">
+</textarea>
+
+<script type ="text/javascript">
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+let progressHeight = (window.pageYOffset / totalHeight)*100;
+progress.style.height = progressHeight + "%";
+}
+</script>
+
+<hr>
+<footer>
+Copyright  &copy; AAS Studios.Creations 2020
+</footer>
+</body>

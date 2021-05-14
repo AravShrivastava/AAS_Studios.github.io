@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head> <title> शिक्षक दिवस  </title> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style media="screen">
+
+::-webkit-scrollbar
+{
+width 0;
+}
+
+#scrollPath
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+height: 100%;
+background: rgba(255,255,255,0.05);
+}
+
+#progressbar
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+background: linear-gradient(to top, #008aff, #00ffe7);
+animation: animate 7s linear infinite;
+}
+
+@keyframes animate
+{
+0%, 100%
+{
+filter: hue-rotate(0deg);
+}
+50%
+{
+filter: hue-rotate(360deg);
+}
+}
+
+#progressbar: before
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(10px);
+}
+
+#progressbar: after
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(30px);
+}
+
+.container {
+background: linear-gradient(to left, #ff0000 0%, #9933ff 100%);
+}
+
+button{
+height: 30px;
+background: linear-gradient(to left, #ff0000 0%, #9933ff 100%);
+color:  #F8F8F8;
+cursor: pointer;
+margin: 10px 0;
+font-size: 17px;
+box-shadow: 0 2px 17px #111;
+border-radius: 7px;
+}
+
+button:hover{
+opacity: .7;
+}
+
+</style>
+ </head>
+<body>
+<header>
+<a href="index.html">
+<img src="../AAS STUDIOS.png" alt="AAS Studios" width="100%" height"100%"  title="AAS Studios - Creations">
+</a>
+</header>
+<div class ="container">
+<hr>
+<nav>
+<table cellspacing="7" cellpadding="7">
+<tr>
+<td><a href="../index.html"><button> HOME </button></td>
+<td><a href="../POEM.html"><button> POEMS </button></td>
+<td><a href="../SONGS.html"><button> SONGS</button></td>
+<td><a href="../STORIES.html"><button> STORIES </button></td>
+<td><a href="../DOCUMENTARY.html"><button> DOCUMENTARY </button></td>
+</tr>
+</table>
+</nav>
+<hr>
+</div>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+
+<poem>
+
+<header><h2><center> शिक्षक दिवस  </center></h2></header>
+
+<img src="../img/TeacherTeacher.jpg" width="100%" height="100%" title="teacher">
+
+<p style="font-size:75px ">
+<pre style="font-size:17px">
+जो दुसरो के लिए करते है सब कुछ उनका दिन आया है आज ,
+मनाओ यह त्योहार बड़े धूम-धाम से छोड़कर सारे काम-काज । 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+हम अपने गुरु के लिए लाएंगे उपहार,
+जो हमे देते है सात्विक संस्कार । 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+गुरु तो होते है तारे ,
+अच्छे होते है गुरु सारे । 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+गुरु के रूप मे आते हे भगवान ,
+जो बड़ाते है हमारी धरती का मान। 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+औरों को पढ़ाना है उनका काम ,
+इसलिए दुनिया मे बनता है हमारा नाम।   
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+उनके बिना न चल सकेगा हमारा संसार ,
+और हो जाएगा इस पर अज्ञानता का वार । 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+कुछ होते है बच्चे जो गुरुओ का नही करते आदर ,
+ऐसे लोगों को ठंड मे नही मिलता एक भी चादर । 
+</pre>
+</p>
+
+<p>
+<pre style="font-size:17px">
+अंत मे कहना चाहूँगा, करो अपने गुरु का आदर ,
+तो कभी नही होगा तुम्हारा निरादर । 
+</pre>
+</p>
+
+<h4 align="right"> कवि अथर्व चौबे & आरव श्रीवास्तव </h4>
+
+</poem>
+
+Comment: <br>
+<textarea name=" " id=" " cols="50" rows="10" placeholder="Please enter your comment here.">
+</textarea>
+
+<script type ="text/javascript">
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+let progressHeight = (window.pageYOffset / totalHeight)*100;
+progress.style.height = progressHeight + "%";
+}
+</script>
+
+<hr>
+<footer>
+Copyright  &copy; AAS Studios.Creations 2017 - 2018
+</footer>
+</body>
+

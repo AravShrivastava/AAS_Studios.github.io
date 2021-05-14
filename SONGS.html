@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head> <title> SONGS </title> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style media="screen">
+
+::-webkit-scrollbar
+{
+width 0;
+}
+
+#scrollPath
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+height: 100%;
+background: rgba(255,255,255,0.05);
+}
+
+#progressbar
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+background: linear-gradient(to top, #008aff, #00ffe7);
+animation: animate 7s linear infinite;
+}
+
+@keyframes animate
+{
+0%, 100%
+{
+filter: hue-rotate(0deg);
+}
+50%
+{
+filter: hue-rotate(360deg);
+}
+}
+
+#progressbar: before
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(10px);
+}
+
+#progressbar: after
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(30px);
+}
+
+button{
+height: 30px;
+background: linear-gradient(to top right, #ffff00 2%, #ff0000 107%);
+color:  black;
+cursor: pointer;
+margin: 10px 0;
+font-size: 17px;
+box-shadow: 0 3px 10px #111;
+border-radius: 7px;
+}
+
+button:hover{
+opacity: .8;
+}
+
+</style>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="AAS STUDIOS.png" alt="AAS Studios" width="100%" height"100%"  title="AAS Studios - Creations">
+</a>
+</header>
+<hr>
+<nav>
+<table cellspacing="7" cellpadding="7">
+<tr>
+<td><a href="index.html"><button> HOME </button></td>
+<td><a href="POEM.html"> <button>POEMS </button></td>
+<td><a href="SONGS.html"> <button>SONGS </button></td>
+<td><a href="STORIES.html"><button> STORIES </button></td>
+<td><a href="DOCUMENTARY.html"><button> DOCUMENTARY </button> </td>
+</tr>
+</table>
+</nav>
+<hr>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+
+<h1><center> SONGS </center></h1>
+
+<p>
+<img src="img/0ba8dfceaa16c47b713cbed42c1e6b34.jpg" width="100%" height="100%" title="language was never a barrier for music">
+</p>
+
+<p>
+<strong> LANGUAGE WAS NEVER A BARRIER AND NEVER WILL BE ONE FOR MUSIC </strong>
+</p>
+
+<p>
+<img src="img/a91cbb2170c5f275f17646f919d9a236.jpg" width="100%" height"100%" title="music touches directly the heart">
+</p>
+
+<p>
+<ul>
+<li style="font-size:17px"><a href="#christmas"> Christmas </a></li>
+<li style="font-size:17px"><a href="#life"> Life </a></li>
+<li style="font-size:17px"><a href="#lame"> Lame </a></li>
+</ul>
+
+<table width="100%">
+<tr>
+<td>
+<hr style="color:skyblue">
+<h3 id="christmas"><center> CHRISTMAS </center></h3>
+<p>
+<pre style="font-size:17px">
+As the winter came,
+And with glorious fame,
+the christmas has arise,
+to night.
+</pre>
+
+<pre style="font-size:17px">
+We'll have joyous day,
+With our friends I pray,
+On christmas,
+to night.
+</pre>
+
+<pre style="font-size:17px">
+I'll lit the X'mas tree,
+And have some chocolates for free,
+as the christmas has arise,
+to night.
+</pre>
+
+<pre style="font-size:17px">
+We'll have gifts,
+And the snow will be lift,
+We'll have fun,
+to night.
+</pre>
+
+<pre style="font-size:17px">
+As the christmas has arise.
+</pre>
+
+<h4 align="right"> By Arav Shrivastava </h4>
+
+</p>
+
+<img src="img/wp2888031.webp" width="100%" height="100%" title="songs">
+
+<hr style="color:lightgreen">
+<h3 id="life"><center> LIFE </center></h3>
+<p>
+<pre style="font-size:17px">
+These days from future and past,
+Have memories that will last,
+Throughout our life.
+</pre>
+
+<pre style="font-size:17px">
+Every moment thinking out loud,
+Got some time "Don't shout!",
+Say this to your life.
+</pre>
+
+<pre style="font-size:17px">
+Time is running fast,
+Do something which will blast,
+All expectations bounded to,
+make  a memory that will last.
+</pre>
+
+<h4 align="right"> By Arav Shrivastava </h4>
+
+</p>
+
+<img src="img/pngtree-creative-headset-song-king-competition-poster-background-material-image_153272.jpg" width="100%" height="100%" title="NO MUSIC NO LIFE">
+
+<hr style="color:cyan">
+<h3 id="lame"><center> LAME </center></h3>
+<p>
+<pre style="font-size:17px">
+Hey!
+Calling me lame,
+not got any shame,
+why you came,
+you and I are not the same.
+</pre>
+
+<pre style="font-size:17px">
+Hey!
+Want to get higher,
+I'll just say fire,
+That's what I desire,
+I'm not a lier.
+</pre>
+
+<pre style="font-size:17px">
+Hey!
+Driving on the moon,
+that time will come soon,
+you burning in the noon,
+No! Not the end it's so soon.
+</pre>
+
+<h4 align="right"> By Arav Shrivastava </h4>
+
+</p>
+
+</td>
+</tr>
+</table>
+
+</p>
+
+
+
+<script type ="text/javascript">
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+let progressHeight = (window.pageYOffset / totalHeight)*100;
+progress.style.height = progressHeight + "%";
+}
+</script>
+
+<hr>
+<footer>
+Copyright  &copy; AAS Studios.Creations 2021-2022
+</footer>
+</body>

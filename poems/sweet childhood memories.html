@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head> <title> Sweet Childhood Memories </title> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style media="screen">
+
+.container {
+background: linear-gradient(to left, #ff0000 0%, #9933ff 100%);
+}
+
+::-webkit-scrollbar
+{
+width 0;
+}
+
+#scrollPath
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+height: 100%;
+background: rgba(255,255,255,0.05);
+}
+
+#progressbar
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+background: linear-gradient(to top, #008aff, #00ffe7);
+animation: animate 7s linear infinite;
+}
+
+@keyframes animate
+{
+0%, 100%
+{
+filter: hue-rotate(0deg);
+}
+50%
+{
+filter: hue-rotate(360deg);
+}
+}
+
+#progressbar: before
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(10px);
+}
+
+#progressbar: after
+{
+content: ' ';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top, #008aff, #00ffe7);
+filter: blur(30px);
+}
+
+button{
+height: 30px;
+background: linear-gradient(to left, #ff0000 0%, #9933ff 100%);
+color:  #F8F8F8;
+cursor: pointer;
+margin: 10px 0;
+font-size: 17px;
+box-shadow: 0 2px 17px #111;
+border-radius: 7px;
+}
+
+button:hover{
+opacity: .7;
+}
+
+</style>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../AAS STUDIOS.png" alt="AAS Studios" width="100%" height"100%"  title="AAS Studios - Creations">
+</a>
+</header>
+<div class ="container">
+<hr>
+<nav>
+<table cellspacing="7" cellpadding="7">
+<tr>
+<td><a href="../index.html"> <button>HOME </button></td>
+<td><a href="../POEM.html"><button> POEMS </button></td>
+<td><a href="../SONGS.html"><button> SONGS</button></td>
+<td><a href="../STORIES.html"> <button>STORIES</button> </td>
+<td><a href="../DOCUMENTARY.html"><button> DOCUMENTARY </button></td>
+</tr>
+</table>
+</nav>
+<hr>
+</div>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+
+<poem>
+
+<header><h2><center> SWEET CHILDHOOD MEMORIES </center></h2></header>
+
+<img src="../img/1 ZjQ1t23CJgFZYp7wq7XyRA.jpeg" width="100%" height="100%" title="When we are young we think of future and rarely enjoy present and in our future we wish to get back to childhood life. Enjoy your present.">
+
+<p style="font-size:75px">
+<pre style="font-size:17px">
+The memories of childhood from the past,
+The play of whole day in the ground,
+These memories are beautiful and will last,
+In this life round.
+</pre>
+<p>
+
+<p>
+<pre style="font-size:17px">
+First friend I made,
+Friend as brave as a tiger,
+All the trust I laid,
+On him like a fighter.
+</pre>
+<p>
+
+<p>
+<pre style="font-size:17px">
+Played, fell and got hurt a lot,
+And at home mother took care,
+This life was like this I thought,
+And there was nothing to be aware.
+</pre>
+<p>
+
+<p>
+<pre style="font-size:17px">
+Whatever we did and got in childhood,
+Plays, gifts and surprizes,
+Never after did it for our good,
+And went on looking at the sun rises.
+</pre>
+<p>
+
+<p>
+<pre style="font-size:17px">
+These memories are so beautiful,
+Beautiful like a butterfly,
+I also need a little to be careful,
+But what will happen if I die.
+</pre>
+<p>
+
+<h4 align="right"> By ~ Arav Shrivastava </h4>
+
+</poem>
+
+Comment: <br>
+<textarea name=" " id=" " cols="50" rows="10" placeholder="Please enter your comment here.">
+</textarea>
+
+<script type ="text/javascript">
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+let progressHeight = (window.pageYOffset / totalHeight)*100;
+progress.style.height = progressHeight + "%";
+}
+</script>
+
+<hr>
+<footer>
+Copyright  &copy; AAS Studios.Creations 2019
+</footer>
+</body>
